@@ -300,3 +300,15 @@ const addProjectOption = project => {
 }
 
 document.onload = loadProjects()
+
+if('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('../service-worker.js')
+      .then( registration => {
+        console.log('service worker registration successful')
+      })
+      .catch( err => {
+        console.log('service worker registration failed: ' + err)
+      })
+  })
+}

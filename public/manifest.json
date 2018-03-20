@@ -1,0 +1,9 @@
+{
+  "short_name": "Palette Picker",
+  "name": "Palette Picker",
+  "background_color": "white",
+  "display": "fullscreen",
+  "theme_color": [
+
+  ]
+}
